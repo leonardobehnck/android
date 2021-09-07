@@ -18,6 +18,7 @@ body {
 }
 
 header {
+    max-height: 250px;
     background-image: linear-gradient(to top, #9fbf40,#c9db94 );
     padding: 100px 0px 10px 10px;
     box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.250);
@@ -32,13 +33,14 @@ header > h1 {
 }
 
 header  > p {
-    margin-top: 25px;
     font-weight: bold;
     text-align: center;
+    max-width: 500px;
+    margin: auto;
 }
 
 nav {
-    margin: 30px 0px 10px 10px;
+    margin: 30px 0px 10px 0px;
 }
 
 nav > a {
@@ -48,6 +50,7 @@ nav > a {
     font-weight: bold;
     color: black;
     text-decoration: none;
+    transition-duration: 0.5s;
 }
 
 nav > a:hover {
@@ -91,20 +94,26 @@ main img {
 }
 
 main .mascote {
-    width: 300px;
+    max-width: 300px;
     display: block;
     margin: auto;
 }
 
 main > p {
-    text-align: justify;
     padding: 10px;
+    text-align: justify;
+    text-indent: 30px; 
+    line-height: 1.8em;
 }
 
 main > p > a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 main > p > a:visited {
@@ -127,7 +136,7 @@ main > p > a::after {
 
 .video-container  { 
     position: relative; 
-    padding-bottom: 56.25%; 
+    padding-bottom: 51.5%; 
     padding-top: 30px; 
 }
 
@@ -166,9 +175,18 @@ main > p > a::after {
     font-weight: bold;
     text-decoration: underline;
     column-count: 2;
-    padding: 30px;
+    padding: 10px;
+    list-style-position: inside;
+    list-style-type: '\02714\00a0'; /*\00a0 da espaco no css */
 }
 
+#extras li {
+    padding: 2px;
+}
+
+#extras abbr {
+    text-decoration: none;
+}
 #extras > p {
     padding: 10px;
 }
@@ -184,7 +202,7 @@ main > p > a::after {
 }
 
 #extras > p > a::after {
-    content: "\01f517" /* Para definir emoji no CSS substitui U+ do codepoint por \0 */
+    content: "\00a0\01f517" /* Para definir emoji no CSS substitui U+ do codepoint por \0 */
 }
 
 #end {
@@ -209,4 +227,17 @@ footer {
     text-align: center;
     margin: 50px 0px 0px 0px;
     padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a::after {
+    content: "\01f4f8" /* Para definir emoji no CSS substitui U+ do codepoint por \0 */
 }
