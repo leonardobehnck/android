@@ -3,6 +3,9 @@
     font-family: 'Android';
     src: url(fontes/idroid.otf) format('opentype');
 }
+:root {
+    --cor0: #DAE4E7; /* CRIA A VARIAVEL PARA COR DE FUNDO */
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -10,7 +13,7 @@
 }
 
 body {
-    background-color: #DAE4E7; /*#796246*/
+    background-color: var(--cor0); /* ATRIBUI A VARIAVEL A COR DE FUNDO */
     font-family: sans-serif;
 }
 
@@ -57,11 +60,12 @@ nav > a:visited {
 
 
 main {
+    max-width: 800px;
+    min-width: 290px;
     background-color: #FBFEFB;
     margin: auto;
     padding: 10px;
     text-align: center;
-    margin: 0% 28%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.250);
 }
 
@@ -103,20 +107,22 @@ main > p > a::after {
 }
 
 #video {
+    max-width: 760px;
+    min-width: 290px;
+    margin: auto;
+    padding: 30px;
     background-color: #9fbf40;
-    margin: 0% 28%;
-    padding:20px;
     text-align: center;
     box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.250);
 }
 
-.video-container { 
+.video-container, .image-container { 
     position: relative; 
     padding-bottom: 56.25%; 
     padding-top: 30px; 
 }
 
-.video-container > iframe { 
+.video-container > iframe, .image-container > picture { 
     position: absolute; 
     top: 0; 
     left: 0; 
@@ -125,7 +131,9 @@ main > p > a::after {
 }
 
 #more {
-    margin:0% 28%;
+    max-width: 800px;
+    min-width: 290px;
+    margin: auto;
     padding: 10px;
     background-color: #FBFEFB;
     box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.250);
@@ -171,9 +179,11 @@ main > p > a::after {
 }
 
 #end {
+    max-width: 800px;
+    min-width: 290px;
+    margin: auto;
     background-color: #FBFEFB;
     border-radius: 0px 0px 15px 15px;
-    margin:0% 28% 50px 28%;
     padding: 10px;
     box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.250);
 }
@@ -188,5 +198,6 @@ footer {
     font-size: 1em;
     font-weight: bold;
     text-align: center;
+    margin: 50px 0px 0px 0px;
     padding: 10px;
 }
