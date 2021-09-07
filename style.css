@@ -61,7 +61,7 @@ nav > a:visited {
 
 main {
     max-width: 800px;
-    min-width: 280px;
+    min-width: 270px;
     background-color: #FBFEFB;
     margin: auto;
     padding: 10px;
@@ -108,7 +108,7 @@ main > p > a::after {
 
 #video {
     max-width: 760px;
-    min-width: 280px;
+    min-width: 270px;
     margin: auto;
     padding: 30px;
     background-color: #9fbf40;
@@ -132,7 +132,7 @@ main > p > a::after {
 
 #more {
     max-width: 800px;
-    min-width: 280px;
+    min-width: 270px;
     margin: auto;
     padding: 10px;
     background-color: #FBFEFB;
@@ -180,7 +180,7 @@ main > p > a::after {
 
 #end {
     max-width: 800px;
-    min-width: 280px;
+    min-width: 270px;
     margin: auto;
     background-color: #FBFEFB;
     border-radius: 0px 0px 15px 15px;
