@@ -61,11 +61,10 @@ nav > a:visited {
 
 main {
     max-width: 800px;
-    min-width: 270px;
+    min-width: 280px;
     background-color: #FBFEFB;
     margin: auto;
     padding: 10px;
-    text-align: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.250);
 }
 
@@ -85,6 +84,16 @@ main h2 {
     background-image: linear-gradient(to right, #FBFEFB, #9fbf40);
     margin: 0px 0px 0px 10px;
     padding: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+main .mascote {
+    width: 300px;
+    display: block;
+    margin: auto;
 }
 
 main > p {
@@ -108,7 +117,7 @@ main > p > a::after {
 
 #video {
     max-width: 760px;
-    min-width: 270px;
+    min-width: 280px;
     margin: auto;
     padding: 30px;
     background-color: #9fbf40;
@@ -116,13 +125,13 @@ main > p > a::after {
     box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.250);
 }
 
-.video-container, .image-container { 
+.video-container  { 
     position: relative; 
     padding-bottom: 56.25%; 
     padding-top: 30px; 
 }
 
-.video-container > iframe, .image-container > picture { 
+.video-container > iframe { 
     position: absolute; 
     top: 0; 
     left: 0; 
@@ -132,7 +141,7 @@ main > p > a::after {
 
 #more {
     max-width: 800px;
-    min-width: 270px;
+    min-width: 280px;
     margin: auto;
     padding: 10px;
     background-color: #FBFEFB;
@@ -180,7 +189,7 @@ main > p > a::after {
 
 #end {
     max-width: 800px;
-    min-width: 270px;
+    min-width: 280px;
     margin: auto;
     background-color: #FBFEFB;
     border-radius: 0px 0px 15px 15px;
